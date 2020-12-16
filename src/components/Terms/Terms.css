@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*privacy*/
+.terms .text_block{
+	padding:40px;
+	border-radius: 65px;
+	background: #FFFFFF;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 500;
+}

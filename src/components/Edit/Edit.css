@@ -1,0 +1,251 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p{
+	margin:0!important;
+}
+.editAll{
+	border:1px dashed #000;
+	width: 80%;
+	padding:10px;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.editPhoto{
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+.editAll .title{
+	width: 100%;
+	height: 40px;
+	/*border:1px dashed #000;*/
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.editAll .title .img{
+	width: 3%;
+}
+.editAll .title p{
+	color: #2B083C;
+	font-weight: 500;
+	font-size: 22px;
+	margin-left: 10px!important;
+}
+.editPhoto .profilePhotos{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.editPhoto .profilePhotos .profilePhotos__item{
+	width: 25%;
+	border: 1px dashed black;
+	padding: 18px;
+	border-radius: 50%;
+	position: relative;
+}
+.editPhoto .profilePhotos .profilePhotos__item .frame{
+	width: 100%;
+	height: 100%;
+	border:5px solid #FF887A;
+	background: rgba(95, 88, 88, 0.7);
+	border-radius: 50%;
+	padding:30%;
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.editPhoto .profilePhotos .profilePhotos__item:active .frame{
+	display: block;
+}
+/*personalEdit*/
+.personalEdit .nameEdit{
+	/*border:1px dashed black;*/
+}
+.editAll .name_block{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.editAll label{
+	color: #2B083C;
+	font-weight: 600;
+	font-size: 25px;
+	margin-left: 5px;
+	margin-bottom: 0;
+}
+.personalEdit .nameEdit .input-group{
+	display: flex;
+	align-items: center;
+}
+.personalEdit .nameEdit .img{
+	width: 8%;
+	margin-right: 5px;
+}
+.personalEdit .nameEdit input{
+	background: none;
+	font-weight: normal;
+	font-size: 22px;
+	border: none!important;
+	color: #050306;
+}
+.personalEdit .nameEdit input:focus{
+	outline: none!important;
+	box-shadow: none!important;
+	border: none!important;
+	border-bottom: 1px solid #fff;
+}
+.personalEdit .nameEdit input:focus{
+	border: 1px solid #130c0c3b!important;
+}
+/*genderAge*/
+.genderAge{
+	/*border:1px dashed #000;*/
+	margin-top: 5px;
+}
+.genderAge .input-group-text{
+	width: 100%!important;
+	justify-content: space-around;
+	background: none;
+	/*border:1px dashed #000;*/
+}
+.genderAge .input-group-text p{
+	color: #2B083C;
+	font-weight: normal;
+	font-size: 18px;
+	margin-left: 5px!important;
+}
+.genderAge .input-group-text input{
+	position: inherit!important;
+}
+.genderAge .input-group-text div{
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.genderAge .input-group{
+	padding-left: 10px;
+}
+.genderAge .input-group select{
+	border: none;
+	background: none;
+	outline: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	font-size: 20px;
+}
+/*Email and Phone Number*/
+.email{
+	/*border:1px dashed #000;*/
+	margin-top: 5px;
+}
+.email input{
+	background: none;
+	font-weight: normal;
+	font-size: 22px;
+	border: none!important;
+}
+.email input:focus{
+	outline: none!important;
+	box-shadow: none!important;
+	border: none!important;
+	border-bottom: 1px solid #fff;
+}
+.email input:focus{
+	border: 1px solid #130c0c3b!important;
+	background: none;
+}
+/*Language select*/
+.language{
+	/*border:1px dashed #000;*/
+}
+.language .language_select{
+	display: flex;
+	justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.language .language_select label{
+	font-size: 18px;
+	margin-left: 12px;
+}
+.language .language_select div{
+	width: 100%;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+/*password*/
+.password{
+	text-align: left;
+	margin-top: 40px;
+}
+.password h4{
+	color: #2B083C;
+}
+.password input{
+	width: 60%;
+	background: #F3E8FB;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	border: none;
+	padding: 10px 15px 10px 15px;
+	outline: none!important;
+}
+/*image bottom*/
+.bg_image{
+	background: url(./assets/register_bottom_right_icon.png);
+	width: 526px;
+    height: 444px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: -3%;
+}
+
+
+
+
+
+
+/*media*/
+@media only screen and (max-width: 1200px) {
+	/*editPhoto*/
+	.editPhoto .profilePhotos .profilePhotos__item{
+		width: 16%;
+		padding: 18px;
+	}
+	/*image bottom*/
+	.bg_image{
+		width: 300px;
+		height: 253px;
+	}
+}
+@media only screen and (max-width: 867px) {
+	/*editPhoto*/
+	.editPhoto .profilePhotos .profilePhotos__item{
+		width: 25%;
+		padding: 18px;
+	}
+	/*image bottom*/
+	.bg_image{
+		width: 200px;
+		height: 169px;
+	}
+}
+@media only screen and (max-width: 612px) {
+	/*image bottom*/
+	.bg_image{
+		display: none;
+	}
+}

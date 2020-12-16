@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p{
+	margin:0!important;
+}
+.mavzu{
+	border:1px dashed #000;
+}
+.mavzu .cards{
+	border:1px dashed #000;
+	width: 100%;
+	padding: 10px 20px;
+}
+.mavzu .cards .cards_item{
+	padding: 0 40px;
+	margin-top: 25px;
+}
+.mavzu .cards .cards_item .img_block{
+	border-radius: 45px;
+	overflow: hidden;
+	transition: 1s;
+}
+.mavzu .cards .cards_item p{
+	color: #011F3B;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 60px;
+}
+.mavzu .cards .cards_item:hover .img_block{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
