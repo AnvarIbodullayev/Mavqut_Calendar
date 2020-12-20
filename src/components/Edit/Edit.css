@@ -22,7 +22,6 @@ p{
 .editAll .title{
 	width: 100%;
 	height: 40px;
-	/*border:1px dashed #000;*/
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -44,9 +43,7 @@ p{
 	flex-wrap: wrap;
 }
 .editPhoto .profilePhotos .profilePhotos__item{
-	width: 25%;
-	border: 1px dashed black;
-	padding: 18px;
+	width: 21%;
 	border-radius: 50%;
 	position: relative;
 }
@@ -62,12 +59,15 @@ p{
 	top:0;
 	left:0;
 }
+.editPhoto .profilePhotos .profilePhotos__item:hover{
+	cursor: pointer;
+}
 .editPhoto .profilePhotos .profilePhotos__item:active .frame{
 	display: block;
 }
 /*personalEdit*/
-.personalEdit .nameEdit{
-	/*border:1px dashed black;*/
+.personalEdit{
+	margin-top: 20px;
 }
 .editAll .name_block{
 	display: flex;
@@ -108,14 +108,13 @@ p{
 }
 /*genderAge*/
 .genderAge{
-	/*border:1px dashed #000;*/
 	margin-top: 5px;
 }
 .genderAge .input-group-text{
 	width: 100%!important;
 	justify-content: space-around;
 	background: none;
-	/*border:1px dashed #000;*/
+	border: none!important;
 }
 .genderAge .input-group-text p{
 	color: #2B083C;
@@ -145,7 +144,6 @@ p{
 }
 /*Email and Phone Number*/
 .email{
-	/*border:1px dashed #000;*/
 	margin-top: 5px;
 }
 .email input{
@@ -165,9 +163,6 @@ p{
 	background: none;
 }
 /*Language select*/
-.language{
-	/*border:1px dashed #000;*/
-}
 .language .language_select{
 	display: flex;
 	justify-content: left;
@@ -211,6 +206,7 @@ p{
     position: absolute;
     bottom: 0;
     right: -3%;
+    z-index: -1;
 }
 
 

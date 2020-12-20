@@ -4,6 +4,7 @@ import Edit from './components/Edit/Edit';
 import Mavzu from './components/Mavzu/Mavzu';
 import Privacy from './components/Privacy/Privacy';
 import Terms from './components/Terms/Terms';
+import Exit from './components/Exit/Exit';
 
 
 function App() {
@@ -11,10 +12,11 @@ function App() {
 		<div className="App">
 
 			{/*<Calendar />*/}
-			{/*<Edit />*/}
+			<Edit />
 			{/*<Mavzu />*/}
-			<Privacy />
-			<Terms />
+			{/*<Privacy />*/}
+			{/*<Terms />*/}
+			{/*<Exit />*/}
 
 		</div>
 	);
