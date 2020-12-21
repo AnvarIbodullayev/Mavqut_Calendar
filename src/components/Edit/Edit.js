@@ -91,12 +91,12 @@ export default function Edit() {
 										<div class="input-group">
 											<div class="input-group-text">
 												<div>
-													<input class="form-check-input" type="radio" value="yes1" name="group1" aria-label="Radio button for following text input" />
-													<p>Male</p>
+													<input class="form-check-input" id="radio1" type="radio" value="yes1" name="group1" aria-label="Radio button for following text input" />
+													<label for="radio1" class="form-label">Male</label>
 												</div>
 												<div>
-													<input class="form-check-input" type="radio" value="yes2" name="group1" aria-label="Radio button for following text input" />
-													<p>Female</p>
+													<input class="form-check-input" id="radio2" type="radio" value="yes2" name="group1" aria-label="Radio button for following text input" />
+													<label for="radio2" class="form-label">Female</label>
 												</div>
 											</div>
 										</div>
@@ -104,13 +104,9 @@ export default function Edit() {
 									</div>
 									<div className="name_block col-xl-6 col-6">
 									
-										<label for="name" class="form-label">Age</label>
+										<label for="age" class="form-label">Age</label>
 										<div class="input-group mb-3">
-											<select>
-												<option value="26">26</option>
-												<option selected>27</option>
-												<option value="28">28</option>
-											</select>
+											<input type="text" class="form-control age_input" placeholder="26" id="name" aria-label="age" />
 										</div>
 
 									</div>
@@ -123,17 +119,17 @@ export default function Edit() {
 								<div className="row">
 									<div className="name_block col-xl-6 col-6">
 
-										<label for="name" class="form-label">Name</label>
+										<label for="name" class="form-label">Email</label>
 										<div class="input-group mb-3">
-											<input type="text" class="form-control" placeholder="Ali" id="name" aria-label="Username" aria-describedby="basic-addon1" />
+											<input type="text" class="form-control" placeholder="Usman@gmail.com" id="name" aria-label="Username" aria-describedby="basic-addon1" />
 										</div>
 
 									</div>
 									<div className="name_block col-xl-6 col-6">
 									
-										<label for="name" class="form-label">Surname</label>
+										<label for="name" class="form-label">Phone number</label>
 										<div class="input-group mb-3">
-											<input type="text" class="form-control" placeholder="Usman" id="name" aria-label="Username" aria-describedby="basic-addon1" />
+											<input type="text" class="form-control" placeholder="+998 93 123 45 67" id="name" aria-label="Username" aria-describedby="basic-addon1" />
 										</div>
 
 									</div>

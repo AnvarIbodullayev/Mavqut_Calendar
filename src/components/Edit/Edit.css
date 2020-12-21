@@ -54,16 +54,13 @@ p{
 	background: rgba(95, 88, 88, 0.7);
 	border-radius: 50%;
 	padding:30%;
-	display: none;
+	display: block;
 	position: absolute;
 	top:0;
 	left:0;
 }
 .editPhoto .profilePhotos .profilePhotos__item:hover{
 	cursor: pointer;
-}
-.editPhoto .profilePhotos .profilePhotos__item:active .frame{
-	display: block;
 }
 /*personalEdit*/
 .personalEdit{
@@ -82,6 +79,9 @@ p{
 	margin-left: 5px;
 	margin-bottom: 0;
 }
+.editAll .input-group-text label{
+	font-size: 18px;
+} 
 .personalEdit .nameEdit .input-group{
 	display: flex;
 	align-items: center;
@@ -130,9 +130,6 @@ p{
     align-items: center;
     justify-content: space-around;
 }
-.genderAge .input-group{
-	padding-left: 10px;
-}
 .genderAge .input-group select{
 	border: none;
 	background: none;
@@ -141,6 +138,16 @@ p{
 	-webkit-appearance: none;
 	appearance: none;
 	font-size: 20px;
+}
+.genderAge .age_input{
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+.genderAge .age_input:focus{
+	outline: none!important;
+	box-shadow: none!important;
+	border: none!important;
 }
 /*Email and Phone Number*/
 .email{
